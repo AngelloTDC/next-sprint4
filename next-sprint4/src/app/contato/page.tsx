@@ -4,7 +4,7 @@ export default function Contato() {
       <h1 className="text-3xl font-bold text-center text-white mb-6">Fale com a gente!</h1>
       <form
         className="flex flex-col gap-4"
-        action="https://example.com/submit" // Substitua pela sua URL de backend ou API para processar o envio
+        action="https://example.com/submit" // URL DA API PRECISA IR AQUI
         method="POST"
       >
         <div className="flex flex-col">
@@ -14,7 +14,7 @@ export default function Contato() {
             id="nome"
             name="nome"
             required
-            className="p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="p-3 rounded-full border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
 
@@ -25,7 +25,7 @@ export default function Contato() {
             id="email"
             name="email"
             required
-            className="p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="p-3 rounded-full border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
 
@@ -36,7 +36,7 @@ export default function Contato() {
             id="telefone"
             name="telefone"
             required
-            className="p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="p-3 rounded-full border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
 
@@ -47,7 +47,7 @@ export default function Contato() {
             name="mensagem"
             rows={4}
             required
-            className="p-3 rounded-2xl border border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="p-3 rounded-2xl border border-gray-300 text-black resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
 
@@ -61,4 +61,3 @@ export default function Contato() {
     </div>
   );
 }
-
