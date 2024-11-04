@@ -15,10 +15,9 @@ export const FormContact = ({ contact }: IFormContactProps) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
     console.log(contact);
     await new Promise((resolve) =>
-      resolve(setTimeout(() => setIsSubmitted(false), 1000))
+      resolve(setTimeout(() => setIsSubmitted(true), 1000))
     );
   };
 
