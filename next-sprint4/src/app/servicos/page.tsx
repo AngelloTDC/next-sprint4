@@ -23,8 +23,7 @@ export default function Servicos() {
         {servicesData.map((service) => (
           <details
             key={service.id}
-            className="group p-0 rounded-lg shadow-md bg-white bg-opacity-80 text-blue-500 cursor-pointer transition-transform duration-300 transform hover:scale-105"
-          >
+            className="group p-0 rounded-lg shadow-md bg-white bg-opacity-80 text-blue-500 cursor-pointer transition-transform duration-300 transform hover:scale-105">
             <summary className="p-6 flex items-center justify-between w-full text-xl font-semibold list-none rounded-lg transition-colors duration-300 group-hover:text-blue-600 focus:outline-none">
               {service.title}
             </summary>

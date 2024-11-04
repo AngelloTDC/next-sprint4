@@ -37,19 +37,17 @@ export default function ContatoUnidade() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button
               onClick={() => setIsSubmitted(false)}
-              className="px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300 text-white"
-            >
+              className="px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300 text-white">
               Enviar outra mensagem
             </button>
             <button
               onClick={() => router.push('/contato')}
-              className="px-6 py-2 bg-blue-700 rounded-full hover:bg-blue-800 transition duration-300 text-white"
-            >
+              className="px-6 py-2 bg-blue-700 rounded-full hover:bg-blue-800 transition duration-300 text-white">
               Voltar
             </button>
           </div>
         </div>
-      ) : (
+        ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col">
             <label htmlFor="nome" className="text-white mb-1">Nome Completo</label>
@@ -59,8 +57,7 @@ export default function ContatoUnidade() {
               name="nome"
               required
               className="p-3 rounded-full border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Digite seu nome"
-            />
+              placeholder="Digite seu nome"/>
           </div>
 
           <div className="flex flex-col">
@@ -71,8 +68,7 @@ export default function ContatoUnidade() {
               name="email"
               required
               className="p-3 rounded-full border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Digite seu email"
-            />
+              placeholder="Digite seu email"/>
           </div>
 
           <div className="flex flex-col">
@@ -83,8 +79,7 @@ export default function ContatoUnidade() {
               name="telefone"
               required
               className="p-3 rounded-full border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="(99) 99999-9999"
-            />
+              placeholder="(99) 99999-9999"/>
           </div>
 
           <div className="flex flex-col">
@@ -95,22 +90,19 @@ export default function ContatoUnidade() {
               rows={4}
               required
               className="p-3 rounded-2xl border border-gray-300 text-black resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Escreva sua mensagem"
-            />
+              placeholder="Escreva sua mensagem"/>
           </div>
 
           <button
             type="submit"
-            className="w-full p-3 mt-4 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300 active:bg-blue-800"
-          >
+            className="w-full p-3 mt-4 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300 active:bg-blue-800">
             Enviar
           </button>
 
           <button
             onClick={() => router.push('/contato')}
             type="button"
-            className="w-full p-3 mt-4 text-white bg-blue-700 rounded-full hover:bg-blue-800 transition duration-300"
-          >
+            className="w-full p-3 mt-4 text-white bg-blue-700 rounded-full hover:bg-blue-800 transition duration-300">
             Voltar
           </button>
         </form>

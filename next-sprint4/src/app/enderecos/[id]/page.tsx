@@ -41,8 +41,7 @@ export default async function EnderecoDetalhe({ params }: { params: { id: string
         <h1 className="text-2xl font-bold text-red-500">Endereço não encontrado</h1>
         <Link
           href="/enderecos"
-          className="mt-6 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition duration-200"
-        >
+          className="mt-6 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition duration-200">
           Voltar para a lista de endereços
         </Link>
       </div>
@@ -61,15 +60,14 @@ export default async function EnderecoDetalhe({ params }: { params: { id: string
             width="100%"
             height="100%"
             loading="lazy"
-            className="rounded-lg"
-          ></iframe>
+            className="rounded-lg">
+          </iframe>
         </div>
       </div>
 
       <Link
         href="/enderecos"
-        className="mt-6 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition duration-200"
-      >
+        className="mt-6 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition duration-200">
         Voltar para a lista de endereços
       </Link>
     </div>

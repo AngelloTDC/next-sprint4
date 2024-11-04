@@ -44,8 +44,7 @@ export default function IntegranteDetalhe({ params }: { params: { id: string } }
         width={200}
         height={200}
         quality={100}
-        className="rounded-lg object-cover w-64 h-64"
-      />
+        className="rounded-lg object-cover w-64 h-64"/>
       <h2 className="mt-4 text-3xl font-bold">{member.name}</h2>
       <p className="text-xl font-semibold text-gray-200">{member.id}</p>
 
@@ -53,8 +52,7 @@ export default function IntegranteDetalhe({ params }: { params: { id: string } }
         href={member.github} 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-200 inline-block"
-      >
+        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-200 inline-block">
         Meu GitHub
       </a>
 

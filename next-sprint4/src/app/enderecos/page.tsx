@@ -15,8 +15,7 @@ export default function Enderecos() {
         {enderecosData.map((endereco) => (
           <details
             key={endereco.id}
-            className="group p-6 rounded-lg shadow-md bg-white bg-opacity-80 text-blue-500 cursor-pointer transition-transform duration-300 transform hover:scale-105 open:bg-blue-500 open:text-white"
-          >
+            className="group p-6 rounded-lg shadow-md bg-white bg-opacity-80 text-blue-500 cursor-pointer transition-transform duration-300 transform hover:scale-105 open:bg-blue-500 open:text-white">
             <summary className="text-xl font-semibold list-none flex justify-between items-center transition-colors duration-300 group-hover:text-blue-600">
               {endereco.title}
             </summary>
@@ -24,8 +23,7 @@ export default function Enderecos() {
               <p className="text-sm text-gray-200">{endereco.description}</p>
               <Link
                 href={`/enderecos/${endereco.id}`}
-                className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200"
-              >
+                className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200">
                 Ver Detalhes
               </Link>
             </div>
