@@ -1,11 +1,8 @@
+import { Pageprops } from "@/app/contato/[id]/page";
 import { getServiceById } from "@/utils/service";
 import { notFound } from "next/navigation";
 
-export default async function ServicoDetalhe({
-  params,
-}: {
-  params: { id: string };
-}) {
+export default async function ServicoDetalhe({ params }: Pageprops) {
   const { id } = await params;
 
   const serviceId = parseInt(id, 10);

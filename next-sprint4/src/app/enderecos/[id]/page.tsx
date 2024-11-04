@@ -1,12 +1,9 @@
+import { Pageprops } from "@/app/contato/[id]/page";
 import { getAddressById } from "@/utils/addresses";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function EnderecoDetalhe({
-  params,
-}: {
-  params: { id: string };
-}) {
+export default async function EnderecosDetalhe({ params }: Pageprops) {
   const { id } = await params;
   if (!id) return notFound();
 

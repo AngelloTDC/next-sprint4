@@ -5,12 +5,12 @@ interface Params {
   id: string;
 }
 
-interface Pageprops {
-  params: Params;
+export interface Pageprops {
+  params: Promise<Params>;
 }
 
-export default function ContatoUnidade({ params }: Pageprops) {
-  const { id } = params;
+export default async function ContatoUnidade({ params }: Pageprops) {
+  const { id } = await params;
 
   const unidadeDescricao = getContactById(id);
 

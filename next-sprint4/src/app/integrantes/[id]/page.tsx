@@ -1,13 +1,10 @@
+import { Pageprops } from "@/app/contato/[id]/page";
 import { getMemberById } from "@/utils/members";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function IntegranteDetalhe({
-  params,
-}: {
-  params: { id: string };
-}) {
+export default async function IntegrantesDetalhe({ params }: Pageprops) {
   const { id } = await params;
 
   const member = getMemberById(id);
