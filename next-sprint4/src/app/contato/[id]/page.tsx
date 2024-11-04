@@ -1,8 +1,11 @@
+import { FormContact } from "@/components/FormContact";
+import { getContactById } from "@/utils/contact";
 
-import { FormContact } from '@/components/FormContact';
-import { getContactById } from '@/utils/contact';
-
-export default async function  ContatoUnidade({ params }: { params: { id: string } }) {
+export default async function ContatoUnidade({
+  params,
+}: {
+  params: { id: string };
+}) {
   const { id } = await params;
 
   const unidadeDescricao = getContactById(id);
@@ -12,7 +15,7 @@ export default async function  ContatoUnidade({ params }: { params: { id: string
       <h1 className="text-3xl font-bold text-center text-white mb-6">
         Fale com a {unidadeDescricao?.nome}
       </h1>
-      
+
       <FormContact />
     </div>
   );

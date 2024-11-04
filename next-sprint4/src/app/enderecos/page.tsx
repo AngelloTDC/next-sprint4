@@ -1,10 +1,7 @@
-// src/app/enderecos/page.tsx
-
-import { enderecosData } from '@/utils/addresses';
-import Link from 'next/link';
+import { enderecosData } from "@/utils/addresses";
+import Link from "next/link";
 
 export default function Enderecos() {
-
   return (
     <div className="max-w-5xl mx-auto py-8 px-4 text-center">
       <h1 className="mb-8 text-4xl font-bold text-white">Nossos Endereços!</h1>

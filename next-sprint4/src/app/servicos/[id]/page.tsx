@@ -1,15 +1,17 @@
 import { getServiceById } from "@/utils/service";
 import { notFound } from "next/navigation";
 
-
-export default async function ServicoDetalhe({ params }: { params: { id: string } }) {
-  const { id } = await params
-
+export default async function ServicoDetalhe({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const { id } = await params;
 
   const serviceId = parseInt(id, 10);
-  const service = getServiceById(serviceId)
+  const service = getServiceById(serviceId);
 
-  if (!id || !service) return notFound()
+  if (!id || !service) return notFound();
 
   return (
     <div className="flex flex-col items-center text-white mt-10">
@@ -18,4 +20,3 @@ export default async function ServicoDetalhe({ params }: { params: { id: string 
     </div>
   );
 }
-
