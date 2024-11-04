@@ -7,16 +7,14 @@ export default function Footer() {
             href="https://github.com/AngelloTDC/next-sprint4"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline text-cyan-400"
-          >
+            className="hover:underline text-cyan-400">
             Git-Hub
           </a>! Visite o site oficial{' '}
           <a
             href="https://www.portoseguro.com.br/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline text-cyan-400"
-          >
+            className="hover:underline text-cyan-400">
             Porto-Seguro
           </a>!
         </p>
