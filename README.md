@@ -1,7 +1,7 @@
 # NEXT-SPRINT4
 
 Bem-vindo ao **NEXT-SPRINT4**! Esse projeto foi desenvolvido em **Next.js** e **TypeScript**, com **Tailwind CSS** para estilização. 
-Ele é organizado seguindo a estrutura do App Router do Next.js 13+ e foi pensado para ser modular, fácil de navegar e expandir. 
+Ele é organizado seguindo a estrutura do App Router do Next.js 13+ e foi pensado para ser modular e fácil de navegar. 
 Ao longo do desenvolvimento, trabalhamos várias funcionalidades para cada uma das páginas (endereços, integrantes, serviços e contato).
 
 ## Funcionalidades Principais
