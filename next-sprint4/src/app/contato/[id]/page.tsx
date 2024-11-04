@@ -1,7 +1,15 @@
 import { FormContact } from "@/components/FormContact";
 import { getContactById } from "@/utils/contact";
 
-export default function ContatoUnidade({ params }: { params: { id: string } }) {
+interface Params {
+  id: string;
+}
+
+interface Pageprops {
+  params: Params;
+}
+
+export default function ContatoUnidade({ params }: Pageprops) {
   const { id } = params;
 
   const unidadeDescricao = getContactById(id);
