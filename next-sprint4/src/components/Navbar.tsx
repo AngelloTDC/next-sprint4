@@ -5,8 +5,7 @@ export default function Navbar() {
     <nav className="flex items-center justify-between p-6 bg-transparent text-white font-semibold">
       <Link 
         href="/" 
-        className="text-3xl font-bold mr-6"
-      >
+        className="text-3xl font-bold mr-6">
         Porto-AutoHelp
       </Link>
 
