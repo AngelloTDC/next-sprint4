@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -7,9 +7,11 @@ export default function HomePage() {
         <div className="flex-1 text-left max-w-md">
           <h1 className="text-4xl font-bold mb-6">Porto-AutoHelp</h1>
           <p className="text-lg leading-relaxed">
-            A Porto-AutoHelp é um novo sistema de ajuda para clientes Porto com diversos tipos de solução para seu veículo! Em
-            parceria com os alunos da FIAP, desenvolvemos um método de ajudar na experiência de nossos clientes para ter o
-            melhor atendimento possível com algo que antes era tão burocrático!
+            A Porto-AutoHelp é um novo sistema de ajuda para clientes Porto com
+            diversos tipos de solução para seu veículo! Em parceria com os
+            alunos da FIAP, desenvolvemos um método de ajudar na experiência de
+            nossos clientes para ter o melhor atendimento possível com algo que
+            antes era tão burocrático!
           </p>
         </div>
 
@@ -17,7 +19,7 @@ export default function HomePage() {
           <Image
             src="/foto-site.png"
             alt="Oxigênio Aceleradora"
-            width={450} 
+            width={450}
             height={450}
             quality={100}
             className="object-contain"
