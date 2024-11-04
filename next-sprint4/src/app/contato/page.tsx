@@ -1,12 +1,12 @@
-import { unidades } from '@/utils/contact';
-import Link from 'next/link';
+import { unidades } from "@/utils/contact";
+import Link from "next/link";
 
 export default function Contato() {
-
-
   return (
     <div className="max-w-2xl mx-auto p-8 bg-gradient-to-b from-blue-500 to-teal-500 rounded-3xl shadow-lg">
-      <h1 className="text-3xl font-bold text-center text-white mb-6">Entre em Contato</h1>
+      <h1 className="text-3xl font-bold text-center text-white mb-6">
+        Entre em Contato
+      </h1>
       <p className="text-center text-white mb-4">
         Selecione uma unidade para entrar em contato:
       </p>

@@ -3,7 +3,9 @@ import { servicesData } from "@/utils/service";
 export default function Servicos() {
   return (
     <div className="max-w-5xl mx-auto py-8 px-4 text-center">
-      <h1 className="mb-8 text-4xl font-bold text-white">Alguns dos nossos Serviços!</h1>
+      <h1 className="mb-8 text-4xl font-bold text-white">
+        Alguns dos nossos Serviços!
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {servicesData.map((service) => (
           <details
@@ -21,6 +23,3 @@ export default function Servicos() {
     </div>
   );
 }
-
-
-
