@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Enderecos() {
   const enderecosData = [
     { id: 1, title: 'Unidade Paulista', description: 'Edifício Paulista - Av. Paulista, 1106 - 7º andar' },
@@ -9,11 +11,17 @@ export default function Enderecos() {
   return (
     <div className="max-w-5xl mx-auto py-8 px-4 text-center">
       <h1 className="mb-8 text-4xl font-bold text-white">Nossos Endereços!</h1>
-      <div className="flex flex-col gap-6"> {/* Altera de grid para flex com coluna */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {enderecosData.map((endereco) => (
-          <details key={endereco.id} className="group p-6 rounded-lg shadow-md bg-white bg-opacity-80 text-blue-500 cursor-pointer transition-transform duration-300 transform hover:scale-105 active:bg-blue-500 active:bg-opacity-90 active:text-white open:bg-blue-500 open:text-white open:bg-opacity-90">
-            <summary className="text-xl font-semibold list-none flex justify-between items-center transition-colors duration-300 group-hover:text-blue-600">{endereco.title}<span className="text-lg group-open:rotate-180 transition-transform duration-300"></span></summary>
-            <p className="mt-4 text-sm transition-opacity duration-300 opacity-0 max-h-0 group-open:opacity-100 group-open:max-h-screen overflow-hidden">{endereco.description}</p>
+          <details key={endereco.id} className="group p-6 rounded-lg shadow-md bg-white bg-opacity-80 text-blue-500 cursor-pointer transition-transform duration-300 transform hover:scale-105">
+            <summary className="text-xl font-semibold list-none flex justify-between items-center transition-colors duration-300 group-hover:text-blue-600">
+              {endereco.title}
+            </summary>
+            <p className="mt-4 text-sm text-gray-700">{endereco.description}</p>
+
+            <Link href={`/enderecos/${endereco.id}`} className="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-200">
+              Ver Detalhes
+            </Link>
           </details>
         ))}
       </div>

@@ -12,7 +12,7 @@ export default function Footer() {
             Git-Hub
           </a>! Visite o site oficial{' '}
           <a
-            href="https://www.porto-seguro.com.br"
+            href="https://www.portoseguro.com.br/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline text-cyan-400"
