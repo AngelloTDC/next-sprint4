@@ -1,40 +1,14 @@
+import { getMemberById } from '@/utils/members';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
-interface Member {
-  name: string;
-  id: string;
-  image: string;
-  github: string;
-}
 
-const teamMembers: Member[] = [
-  {
-    name: 'Angello Turano da Costa',
-    id: 'RM556511',
-    image: '/integrante1.png',
-    github: 'https://github.com/AngelloTDC',
-  },
-  {
-    name: 'Leonardo Kawachi',
-    id: 'RM558166',
-    image: '/integrante2.jpg',
-    github: 'https://github.com/IHateMyTiming',
-  },
-  {
-    name: 'Victor Nieves Britto Medeiros',
-    id: 'RM554557',
-    image: '/integrante3.jpg',
-    github: 'https://github.com/victornbm7405',
-  },
-];
-
-export default function IntegranteDetalhe({ params }: { params: { id: string } }) {
-  const { id } = params;
-
-  const member = teamMembers.find((member) => member.id === id);
-
-  if (!member) return <p>Carregando...</p>;
+export default async function IntegranteDetalhe({ params }: { params: { id: string } }) {
+  const { id } = await params;
+  
+  const member = getMemberById(id);
+  if (!id || !member) return notFound()
 
   return (
     <div className="flex flex-col items-center text-white mt-10">

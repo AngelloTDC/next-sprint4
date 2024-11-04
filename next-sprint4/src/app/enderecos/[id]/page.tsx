@@ -1,39 +1,13 @@
+import {  getAddressById } from '@/utils/addresses';
 import Link from 'next/link';
-
-const enderecosData = [
-  {
-    id: 1,
-    title: 'Unidade Paulista',
-    description: 'Edifício Paulista - Av. Paulista, 1106 - 7º andar',
-    latitude: -23.564170837402344,
-    longitude: -46.65250778198242,
-  },
-  {
-    id: 2,
-    title: 'Unidade Aclimação',
-    description: 'Av. Lins de Vasconcelos, 1222 - Aclimação',
-    latitude: -23.573987,
-    longitude: -46.644321,
-  },
-  {
-    id: 3,
-    title: 'Unidade Campos Elíseos',
-    description: 'Alameda Barão de Piracicaba, 618 - Campos Elíseos',
-    latitude: -23.553987,
-    longitude: -46.664321,
-  },
-  {
-    id: 4,
-    title: 'Unidade Campos Elíseos 2',
-    description: 'R. Guaianazes, 1238 - Campos Elíseos',
-    latitude: -23.553500,
-    longitude: -46.664800,
-  },
-];
+import { notFound } from 'next/navigation';
 
 export default async function EnderecoDetalhe({ params }: { params: { id: string } }) {
-  const enderecoId = parseInt(await params.id, 10);
-  const endereco = enderecosData.find((endereco) => endereco.id === enderecoId);
+  const { id } = await  params
+  if (!id) return notFound()
+
+  const enderecoId = parseInt(id, 10);
+  const endereco = getAddressById(enderecoId);
 
   if (!endereco) {
     return (

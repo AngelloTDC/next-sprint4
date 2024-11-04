@@ -1,14 +1,9 @@
 // src/app/enderecos/page.tsx
 
+import { enderecosData } from '@/utils/addresses';
 import Link from 'next/link';
 
 export default function Enderecos() {
-  const enderecosData = [
-    { id: 1, title: 'Unidade Paulista', description: 'Edifício Paulista - Av. Paulista, 1106 - 7º andar' },
-    { id: 2, title: 'Unidade Aclimação', description: 'Av. Lins de Vasconcelos, 1222 - Aclimação' },
-    { id: 3, title: 'Unidade Campos Elíseos', description: 'Alameda Barão de Piracicaba, 618 - Campos Elíseos' },
-    { id: 4, title: 'Unidade Campos Elíseos 2', description: 'R. Guaianazes, 1238 - Campos Elíseos' },
-  ];
 
   return (
     <div className="max-w-5xl mx-auto py-8 px-4 text-center">
