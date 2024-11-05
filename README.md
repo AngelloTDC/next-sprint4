@@ -50,4 +50,10 @@ Ao longo do desenvolvimento, trabalhamos várias funcionalidades para cada uma d
 - Leonardo Kawachi: RM558166.
 - Victor Nieves Britto Medeiros: RM554557.
 
+## Vídeo no Youtube de apresentação
+- https://youtu.be/Enh4PYAEX8Y
+
+## Link do Vercel
+- https://next-sprint4.vercel.app/
+
 
